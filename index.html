@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Product Placement Analysis</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <h1>Strategic Product Placement</h1>
+            <p>Data-driven insights for optimal retail execution</p>
+        </header>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="card-glass">
+            <div class="text-center mb-4">
+                <h2>Analysis Dashboard</h2>
+                <p>Interactive overview of product metrics across categories and demographics.</p>
+            </div>
+            
+            <div class="tableau-container">
+                <div class='tableauPlaceholder' id='viz1769579249552' style='position: relative; width: 100%;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;projectdataanalyst_17695144137310&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='projectdataanalyst_17695144137310&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;projectdataanalyst_17695144137310&#47;Dashboard1&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="story" class="card-glass">
+            <div class="text-center mb-4">
+                <h2>The Strategy Story</h2>
+                <p>Guided walkthrough of key findings and recommendations.</p>
+            </div>
+
+            <div class="tableau-container">
+                <div class='tableauPlaceholder' id='viz1769579209763' style='position: relative; width: 100%;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='&lt;Product Placement Analysis Story &gt; ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;projectdataanalyststory&#47;Story1&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='path' value='views&#47;projectdataanalyststory&#47;Story1?:language=en-US&amp;:embed=true&amp;:sid=&amp;:redirect=auth' /> 
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;pr&#47;projectdataanalyststory&#47;Story1&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Tableau Script -->
+    <script type='text/javascript'>
+        function initTableau() {
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            document.body.appendChild(scriptElement);
+            
+            // Adjust visual sizes manually if needed or rely on CSS 
+            var viz1 = document.getElementById('viz1769579249552').getElementsByTagName('object')[0];
+            viz1.style.width = '100%';
+            viz1.style.minHeight = '750px'; // Increased height for better view
+
+            var viz2 = document.getElementById('viz1769579209763').getElementsByTagName('object')[0];
+            viz2.style.width = '100%';
+            viz2.style.minHeight = '800px';
+        }
+        
+        window.onload = initTableau;
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
