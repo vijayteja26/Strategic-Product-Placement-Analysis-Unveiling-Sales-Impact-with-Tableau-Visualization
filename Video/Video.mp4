@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>Playlist</title>
+	<trackList>
+		<track>
+			<location>file:///C:/Users/mummi/Downloads/Loom%20_%20Free%20Screen%20&amp;%20Video%20Recording%20Software%20_%20Loom%20-%2019%20February%202026.mp4</location>
+			<duration>161545</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+				<vlc:option>file-caching=1000</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/mummi/Downloads/Loom%20_%20Free%20Screen%20&amp;%20Video%20Recording%20Software%20_%20Loom%20-%2019%20February%202026.mp4</location>
+			<duration>161545</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>1</vlc:id>
+				<vlc:option>file-caching=1000</vlc:option>
+			</extension>
+		</track>
+		<track>
+			<location>file:///C:/Users/mummi/Downloads/Strategic%20Product%20Placement%20Analysis%20-%2019%20February%202026%20(1).mp4</location>
+			<duration>55595</duration>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>2</vlc:id>
+				<vlc:option>file-caching=1000</vlc:option>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+		<vlc:item tid="0"/>
+		<vlc:item tid="1"/>
+		<vlc:item tid="2"/>
+	</extension>
+</playlist>
